@@ -1,0 +1,47 @@
+# Build output
+build/
+build-*/
+out/
+cmake-build-*/
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+
+# IDE
+.vs/
+.vscode/
+*.user
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# --- Retail game files: NOT redistributed (REPO_RULES section 3) ---
+# Star Wars Rebellion (c) 1998 LucasArts / Lucasfilm. Bring your own copy (Steam).
+game/
+/game
+*.exe
+*.EXE
+*.dll
+*.DLL
+*.zip
+
+# Generated from the binary, never committed: the lifted C, the catalog,
+# RTTI/vtable dumps and every other analysis of REBEXE.EXE.
+src/recomp/gen/
+work/
+
+# Recordings and logs of runs
+*.mp4
+*.log
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# Made by Setup.cmd / setup.sh
+* (recomp).cmd
+* (recomp).sh
